@@ -2,25 +2,76 @@
 <html>
 	<head>
 		<title>WebDev 2022 - Harrisonn</title>
+		<style>
+			body {
+				display: grid;
+				padding: 2.5%;
+				background-color: #111131;
+				color: #fafaff;
+				font-family: Ubuntu;
+				font-size: 12pt;
+			}
+
+			h1 {
+				color: #a0a0ed;
+				font-size: 16pt;
+				font-weight: bold;
+			}
+
+			a {
+				text-decoration: none;
+				color: #aaaadc;
+				font-weight: bold;
+			}
+
+			.topic {
+				color: #aaaadc;
+				font-weight: bold;
+			}
+
+			.grid {
+				display: grid;
+				margin-left: 10%;
+				margin-right: 10%;
+				grid-gap: 5%;
+				grid-template-columns: auto auto;
+	
+			}
+
+			.grid > div {
+				background-color: #302050; 
+				padding: 5%;
+			}
+
+		</style>
 	</head>
 
 	<body>
-		<h1>WebDev 2022 - Harrisonn</h1>
-		<h1>Minha Página</h1>
-		<ul>
-			<li><a href="#sm">Sobre mim</a></li>
-			<li><a href="#oqa">O que aprendi?</a></li>
-		</ul>
-		<h1 id="sm">Sobre mim</h1>
-		<p>
-		Olá, me chamo Jorge Harrisonn, sou capixaba, tenho 17 anos.<br>Entrei no WebDev para recuperar prática com desenvolvimento web, além de adquirir novos conhecimentos.
-		</p>
-		<h1 id="oqa">O que aprendi no WebDev?</h1>
+		<div>
+			<h1>WebDev 2022 - Harrisonn</h1>
+			<h1>Minha Página</h1>
 			<ul>
-				<li>Introdução</li>
-				<li>Na primeira aula, fomos apresentados às tecnologias HTML, CSS e JS</li>
-				<li>Fomos apresentados ao CodePen (uma live editor de HTML)</li>
-				<li>Conhecemos o Git</li> 			
+				<li><a href="#sm">Sobre mim</a></li>
+				<li><a href="#oqa">O que aprendi?</a></li>
 			</ul>
+		</div>
+		<div class="grid">
+			<div>
+				<h1 id="sm">Sobre mim</h1>
+				<p>Olá, me chamo Jorge Harrisonn, sou capixaba, tenho 17 anos.<br>Entrei no WebDev para recuperar prática com desenvolvimento web, além de adquirir novos conhecimentos.</p>
+			</div>
+			<div>
+				<h1 id="oqa">O que aprendi no WebDev?</h1>
+				<ul>
+					<li class="topic">Introdução</li>
+					<li>Na primeira aula, fomos apresentados às tecnologias HTML, CSS e JS</li>
+					<li>Fomos apresentados ao CodePen (uma live editor de HTML)</li>
+					<li>Conhecemos o Git</li>
+					<li class="topic">CSS</li>
+					<li>Fomos apresentados à CSS que permite configurar o estilo da página HTML.</li>
+					<li>Conhecemos os seletores que permitem escolher quais elementos queremos modificar</li>
+				</ul>
+			</div>
+		</div
 	</body>
 </html>
