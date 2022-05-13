@@ -1,0 +1,60 @@
+body {
+    padding: 2.5%;
+    background-color: #111121;
+    color: #fafaff;
+    font-family: Ubuntu;
+    font-size: 12pt;
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    padding: 2.5%;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #222245;
+}
+
+.block {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    color: #5454ff;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+
+h2 {
+    color: #aaaadc;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+a {
+    padding: 1em;
+    background-color: #111121;
+    text-decoration: none;
+    color: #aaaadc;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #5454ff;
+    color: #fafaff;
+    box-shadow: 0em 0.25em #fafaff;
+}
+
+.pp {
+    display: inline; 
+    max-width: 10%; 
+    max-height: 10%; 
+    float: right;
+
+    border: 0.1em;
+    border-color: #aaaadc;
+    border-style: double;
+}
