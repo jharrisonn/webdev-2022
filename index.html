@@ -6,44 +6,70 @@
 	</head>
 
 	<body>
-		<div class="header">
-			<h1 style="display: inline;">WebDev 2022 - Harrisonn</h1>
-			<div>
+		<div id="header">
+			<h1 id="title-long">WebDev 2022 - Harrisonn</h1>
+			<h1 id="title-short">WebDev</h1>
+			<div style="padding-top: 1em; padding-bottom: 1em;">
 				<a href="#sm">Sobre mim</a>
 				<a href="#oqa">O que aprendi?</a>
 			</div>
 		</div>
 
-		<div class="block">
-			<img class="pp" src="dondon.jpeg" alt="Minha gatinha de estimação"/>
-			<div style="display: inline-block; margin-right: 2.5%;">
+		<div id="main">
+			<div class="block">
 				<h1 id="sm">Sobre mim</h1>
-				<p>Olá, me chamo Jorge Harrisonn, sou capixaba, tenho 17 anos.<br>Entrei no WebDev para recuperar prática com desenvolvimento web, além de adquirir novos conhecimentos.</p>
+				<div style="display: inline-block; margin-right: 2.5%;">
+					<img id="pp" src="dondon.jpeg" alt="Minha gatinha de estimação"/>
+					<p>Olá, me chamo Jorge Harrisonn, sou capixaba, tenho 17 anos.<br>Entrei no WebDev para recuperar prática com desenvolvimento web, além de adquirir novos conhecimentos.</p>
+				</div>
+			</div>
+
+			<div class="block">
+				<h1 id="oqa">O que aprendi no WebDev?</h1>
+				
+				<h2>Introdução</h2>
+				<ul>
+					<li>Na primeira aula, fomos apresentados às tecnologias HTML, CSS e JS</li>
+					<li>Fomos apresentados ao CodePen (uma live editor de HTML)</li>
+					<li>Conhecemos o Git</li>
+				</ul>
+
+				<h2>CSS</h2>
+				<ul>
+					<li>Fomos apresentados à CSS que permite configurar o estilo da página HTML.</li>
+					<li>Conhecemos os seletores que permitem escolher quais elementos queremos modificar</li>
+				</ul>
+				
+				<h2>Position</h2>
+				<ul>
+					<li>Na aula conhecemos um pouco sobre a distribuição dos elementos na tela.</li>
+					<li>Fomos apresentados às <em>positions</em> como <em>absolute, relative, fixed...</em> que nos permitem definir a posição dos elementos.</li>
+					<li>Conhecemos a flexbox que permite distribuir os elementos dentro de um contêiner de forma "dinâmica".</li>
+				</ul>
+
+				<h2>Responsividade</h2>
+				<ul>
+					<li>Fomos apresentados ao conceito de responsividade.</li>
+					<li>Se trata dos ajustes que devem ser feitos a uma página web para que confira maior compatibilidade entre os diferentes tipos de dispositivos.</li>
+				</ul>
 			</div>
 		</div>
 
-		<div class="block">
-			<h1 id="oqa">O que aprendi no WebDev?</h1>
-			
-			<h2>Introdução</h2>
-			<ul>
-				<li>Na primeira aula, fomos apresentados às tecnologias HTML, CSS e JS</li>
-				<li>Fomos apresentados ao CodePen (uma live editor de HTML)</li>
-				<li>Conhecemos o Git</li>
-			</ul>
-
-			<h2>CSS</h2>
-			<ul>
-				<li>Fomos apresentados à CSS que permite configurar o estilo da página HTML.</li>
-				<li>Conhecemos os seletores que permitem escolher quais elementos queremos modificar</li>
-			</ul>
-			
-			<h2>Position</h2>
-			<ul>
-				<li>Na aula conhecemos um pouco sobre a distribuição dos elementos na tela.</li>
-				<li>Fomos apresentados às <em>positions</em> como <em>absolute, relative, fixed...</em> que nos permitem definir a posição dos elementos.</li>
-				<li>Conhecemos a flexbox que permite distribuir os elementos dentro de um contêiner de forma "dinâmica".</li>
-			</ul>
+		<div id="sidebar" class="block">
+			<h1>Links Aleatórios</h1>
+			<p>Aqui segue uma lista de links aleatórios de coisas que são relevantes para mim:</p>
+			<div id="link-list">
+				<img src="jarrislist.png"/ style="max-width: 50px; max-height: 50px;">
+				<a href="https://open.spotify.com/playlist/3nLOOsnFOLjam0KDApYWbQ">Playlist Spotify</a>
+				<img src="flamengo.png"/ style="max-width: 50px; max-height: 50px; margin-left: auto; margin-right: auto;">
+				<a href="https://www.flamengo.com.br/">Flamengo</a>
+				<img src="barcelona.png"/ style="max-width: 50px; max-height: 50px;">
+				<a href="https://www.fcbarcelona.com/en/">Barcelona</a>
+				<img src="viniccius13.jpg"/ style="max-width: 50px; max-height: 50px;">
+				<a href="https://www.youtube.com/user/viniccius13">Viniccius13</a>
+				<img src="minecraft.webp"/ style="max-width: 50px; max-height: 50px;">
+				<a href="https://www.minecraft.net/en-us">Minecraft</a>
+			</div>
 		</div>
 	</body>
 </html>
