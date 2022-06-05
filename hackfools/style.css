@@ -1,0 +1,164 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+#main {
+    margin-left: 0.3em;
+    font-size: 30px;
+    margin-bottom: 2em;
+
+}
+#prin {
+    margin-left: 0.4em;
+
+}
+#logo {
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-right: 7%;
+}
+.button {
+    top:4em;
+    left:38em;
+    width:100px;
+    height:40px;
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(216, 29, 29);
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+h1 {
+    
+    color: rgb(24, 24, 24);
+    font-size: px;
+    top: 2em;
+    left: 10em;
+    position: absolute;
+    object-fit: cover;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+#b1 {
+    z-index: 2;
+    display: inline-block;
+    width: 15em;
+    height: 3em;
+    border-radius: 4px;
+    background-color: rgb(216, 29, 29);
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 2.8em;
+
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+section {
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+p{
+    margin-left: 2.1em;
+    color: rgb(99, 99, 99);
+    font-size: 20px;
+}
+h3 {
+    margin-left: 3.5em;
+    font-size: 30px;
+    margin-bottom: 2em;
+}
+#restaurante {
+    background-color:rgb(216, 29, 29);
+    padding: 3em;
+    border-radius: 1em 0em 0em 1em;
+
+}
+#restaurante2 {
+    background-color:rgb(216, 29, 29);
+    padding: 3em;
+    border-radius: 0em 1em 1em 0em;
+    left: 50em;
+    position: absolute;
+    object-fit: cover;
+}
+#restaurante1{
+    background-color:rgb(216, 29, 29);
+    padding: 3em;
+    left: 30em;
+    position: absolute;
+    object-fit: cover;
+}
+
+#preview {
+    left: 35em;
+    top: 25.5em;
+    background-color: rgb(216, 29, 29);
+    margin: 5em;
+    position: absolute;
+
+}
+select {
+    margin-left: 3.2em;
+}
+#adicionais, #opcionais {
+    margin-left: 2.4em;
+}
+.b5 {
+    z-index: 2;
+    display: inline-block;
+    width: 10em;
+    height: 3em;
+    border-radius: 4px;
+    background-color: rgb(216, 29, 29);
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 2.8em;
+}
+#linha-vertical {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1.8em;
+    width: 77em;
+    border: 1px solid rgb(192, 192, 192);
+}
+.thiago {
+    margin-left: 0.1em;
+}
