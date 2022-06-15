@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+    <script src="scripts/sabores.js"></script>
+    <script src="scripts/sabores_load.js"></script>
+    <script src="scripts/solicitar.js"></script>
+    <style>
+        #preview > img {
+            position: absolute;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+    <title>AiFode - Faça seu pedido</title>
+</head>
+<body onload="sabores_load()">
+    <header>
+        <a href="aifode.html">
+            <img id="logo" src="images/IMG_1858.PNG" style="widht:300px;height:180px">
+        </a>
+        <h1 id="valor">Tudo para piorar seu dia a dia.</h1>
+    </header>
+    <div id="content">
+        <div id="panel" >
+            <button id="b1">Me surpreenda (ou não)</button>
+
+            <p><b>Escolha a base da sua pizza:</b></p>
+            <select name="base" id="base"></select>
+            <div id="linha-vertical"></div>
+            <p><b>Escolha o recheio da sua pizza:</b></p>
+            <select name="recheio" id="recheio"></select>
+            <div id="linha-vertical"></div>
+            <p><b>Escolha o molho da sua pizza:</b></p>
+            <select name="molho" id="molho"></select>
+            <div id="linha-vertical"></div>
+            <p><b>Escolha seus adicionais:</b></p>
+            <div id="adicionais"></div>
+            <div id="linha-vertical"></div>
+            <p><b>Opcionais</b></p>
+            <div id="opcionais"></div>
+            <div id="linha-vertical"></div>
+
+            <button class="b5" onclick="visualizar()">Visualizar</button>
+            <button class="b5" onclick="confirmar()">Confirmar Pedido</button>
+        </div>
+        
+        <div id="preview"></div>
+    </div>
+</body>
+</html>
