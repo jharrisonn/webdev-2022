@@ -16,7 +16,7 @@ html.light_mode {
 
 body {
     display: grid;
-    padding: 2.5%;
+    margin: 0;
     background-color: var(--bg-color);
     color: var(--fg-color);
     font-family: Ubuntu;
@@ -29,7 +29,6 @@ body {
     grid-column: 1 /span 2;
     display: flex;
     position: sticky;
-    top: 2.5%;
     padding: 2.5%;
     flex-direction: row;
     align-items: baseline;
@@ -40,12 +39,14 @@ body {
 
 #main {
     display: block;
+    margin: 1em;
 }
 
 #sidebar {
     display: block;
     background-color: var(--bg-color-2);
     padding: 1em;
+    margin: 1em;
 }
 
 #title-long {
@@ -56,9 +57,9 @@ body {
 }
 
 #pp {
-    display: inline; 
-    max-width: 10%; 
-    max-height: 10%; 
+    display: inline;
+    max-width: 10%;
+    max-height: 10%;
     float: left;
 
     border: 0.1em;
