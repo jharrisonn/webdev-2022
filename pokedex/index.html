@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="--main-color: #FFD800; --sec-color: #090C9B; --fg-color: #F0ECE5; --bg-color: #2C2F33;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Harrisonn</title>
+
+    <script src="pokedex.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="setup()">
+    <header>
+        <h1>POKEDEX WEBDEV</h1>
+        <div>
+            <input type="text" id="search-bar">
+            <button onclick="search()">Eu escolho você</button>
+        </div>
+    </header>
+    
+    <div id="main">
+        <img id="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="" onmouseenter="set_shiny()" onmouseleave="unset_shiny()">
+        <div id="content-bar">
+            <div id="pokemon-id">
+                <div id="poke-logo">
+                    <img id="poke-icon" src="logos/electric.svg">
+                </div>
+                <h1 id="poke-name">Pikachu</h1>    
+            </div>
+            <ul id="poke-types">
+                <li><h2>Electric</h2></li>
+            </ul>
+            <ul id="poke-abs">
+                <li>Static</li>
+                <li>Lighting rod</li>
+            </ul>
+        </div>
+    </div>    
+
+    <p>
+        Pokedex criada por Jorge Harrisonn.
+    </p>
+</body>
+</html>
