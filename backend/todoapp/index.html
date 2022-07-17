@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TO-DO App</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="./scripts/loader.js"></script>
+    <script src="./scripts/control.js"></script>
+
+</head>
+<body onload="refreshData(); loadElements(); refreshTaskList()" >
+
+    <header>
+        <h1>TO-DO App</h1>
+        <p>Gerencie suas tarefas e seja menos vagabundo!</p>    
+    </header>
+
+    <div id="list">
+        <div id="list-cpanel">
+            <input type="text" class="cpanel-text" id="cpanel-title" placeholder="Listar tarefas">
+            <input type="checkbox" class="cpanel-check" id="cpanel-check">
+            <input type="number" class="cpanel-number" id="cpanel-priority" placeholder="0">    
+
+            <div class="icon-panel">
+                <button class="icon-btn tooltip" onclick="addItem()">+
+                    <span class="tooltip-text">Adicionar tarefa</span>
+                </button>
+                <button class="icon-btn tooltip" onclick="refreshTaskList()">↻
+                    <span class="tooltip-text">Recarregar</span>
+                </button>
+                <button class="icon-btn tooltip" onclick="removeAllItems()">×
+                    <span class="tooltip-text">Remover todas tarefas</span> 
+                </button>   
+            </div>
+
+            <input type="text" class="cpanel-text" id="epanel-title" disabled>
+            <input type="checkbox" class="cpanel-check" id="epanel-check" disabled>
+            <input type="number" class="cpanel-number" id="epanel-priority" disabled>    
+            <div class="icon-panel">
+                <button class="icon-btn tooltip" id="epanel-edit" onclick="leaveEditMode()" disabled>↲
+                    <span class="tooltip-text">Salvar edição</span> 
+                </button>
+            </div>
+        </div>
+        <div id="list-view-mode">
+            <button class="epanel-btn" onclick="setViewMode(2)" id="epanel-btn-all">Tudo</button>
+            <button class="epanel-btn" onclick="setViewMode(1)" id="epanel-btn-done">Completas</button>
+            <button class="epanel-btn" onclick="setViewMode(0)" id="epanel-btn-todo">Pendentes</button>
+        </div>
+
+        <div id="list-items"></div>
+    </div>
+</body>
+</html>
